@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutterdemo/page/guide_page.dart';
 import 'package:flutterdemo/page/root_page.dart';
 import 'package:flutterdemo/provider/user.dart';
 import 'package:flutterdemo/router.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
                 ),
                 debugShowCheckedModeBanner: false,
                 onGenerateRoute: onGenerateRoute,
-                home:  RootPage(),
+                home:  GuidePage(),
                 localizationsDelegates: const [
                   I18n.delegate,
                   GlobalMaterialLocalizations.delegate,
